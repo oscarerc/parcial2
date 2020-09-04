@@ -1,20 +1,20 @@
- <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
         }
-    </style>
-    <!-- Custom styles for this template -->
+    }
+</style>
+<!-- Custom styles for this template -->
 
 </head>
 
@@ -33,19 +33,41 @@
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
-                            <button id="btnleer" onclick="leerDatos()" type="button" class="btn btn-light">Agregar datos</button>                   
+                        <button id="btnleer" onclick="leerDatos()" type="button" class="btn btn-light">Agregar
+                            datos</button>
 
                     </ul>
                 </div>
             </nav>
-            
+
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div class="col">
-                    <h2>Listado </h2>
-                    <div class="table-responsive">
+                    <h2>Perfil </h2>
+                    {{!-- <div class="table-responsive">
  
-                    </div>
+                    </div> --}}
+                    <form action="infpersonal"></form>
+                    <input type="text" placeholder="Nombre" name="" id="nombre">
+                    <input type="text" placeholder="apellidos" name="" id="apellidos">
+                    <input type="text" placeholder="edad" name="" id="edad">
+                    <input type="text" placeholder="sexo" name="" id="sexo">
+                    <input type="text" placeholder="Profesion" name="" id="profesion">
+                    <input type="email" placeholder="CORREO" name="email" required id="emailUser">
+                    <input type="text" placeholder="Descripcion" name="descipcion" id="descipcion" <br>
+                    <button onclick="registrarUsuario()" class="botonenviar">REGISTRAR</button>
+                    <h2>Proyectos realizados</h2>
+                    <input type="text" placeholder="nombre" name="" id="nombreproyecto">
+                    <input type="text" placeholder="descripcionproyect" name="" id="descripcionproyecto">
+                    <button onclick="registrarUsuario()" class="botonenviar">REGISTRAR</button>
+                    <h2>trabajos realizados</h2>
+                    <input type="text" placeholder="cargo o tipo" name="" id="cargo">
+                    <input type="text" placeholder="descripcion trabajo" name="" id="descripciontrabajo">
+                    <button onclick="registrarUsuario()" class="botonenviar">REGISTRAR</button>
+
+
+
+
                 </div>
             </main>
         </div>
